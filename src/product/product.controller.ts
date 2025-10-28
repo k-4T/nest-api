@@ -29,7 +29,7 @@ export class ProductController {
 	@Get("/allProduct")
 	async allProduct() {
 		let data = await this.prisma.product.findMany();
-		return data;
+		return data; 
 	}
 
 	@Get("/singleProduct/:id")
